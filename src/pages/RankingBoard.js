@@ -61,14 +61,16 @@ const Main = () => {
         <h1 className="logo">Spring Market</h1>
 
         <div className="topButtonAlign">
-          <button className="topButton">
+
+          {localStorage.getItem("token") ? (
+            <button className="topButton">
             <Link to={"/mycart"} style={{ textDecoration: "none", color: "black" }}>장바구니</Link>
-          </button>
+          </button>) : null}
 
-
-          <button className="topButton">
+          {localStorage.getItem("token") ? (
+            <button className="topButton">
             <Link to={"/myorder"} style={{ textDecoration: "none", color: "black" }}>주문내역</Link>
-          </button>
+          </button>) : null}
           
           {localStorage.getItem("token") ? null : (
             <button className="topButton">
