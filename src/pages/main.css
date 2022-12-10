@@ -1,0 +1,44 @@
+.card_list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.card {
+  /* border: 1px solid black;
+   */
+   border: 0px;
+  margin-bottom: 15px;
+}
+
+.mainContainer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 3cm;
+
+}
+.filterContainer {
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+    line-height: 25px;
+}
+
+.logo {
+  /* background-color:#70d30d; */
+  text-align: center;
+}
+
+.return {
+  width: 5%;
+  margin-left: auto; 
+  margin-right: auto;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 2%;
+}

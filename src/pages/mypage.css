@@ -1,0 +1,86 @@
+.wrap {
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-left: auto; 
+    margin-right: auto;
+    cursor: default;
+    text-align: center;
+    width: 70%;
+}
+
+.productTitle {
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+.title {
+    background-color: lightgreen;
+    border-radius: 20px;
+    width: 180px;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.addCartOrder {
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.delCartOrder {
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.orderButton {
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 0px;
+    width: 10%;
+    height: 30px;
+    font-size: 110%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.plusButton {
+    background-color: white;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.minusButton {
+    background-color: white;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.delCartOrderList {
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.cartOrderContainer {
+    border-radius: 40px;
+    width: 40%;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-color: black;
+}

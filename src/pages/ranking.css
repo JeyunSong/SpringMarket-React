@@ -1,0 +1,132 @@
+.topButtonAlign {
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.topButton{
+    background-color: lightgreen;
+    border-color: white;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0cm;
+}
+
+.rankingButton {
+    color: white;
+    border-color: white;
+    display: flex;
+}
+
+.preferButton {
+    color: white;
+    border-color: white;
+    display: flex;
+}
+
+.totalButton {
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 12px;
+}
+
+.keywordBox {
+    background-color: white;
+    border-width: 1.2px;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+.rankingText {
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-style:inherit;
+}
+
+.buttonBox {
+    background-color: white;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0cm;
+}
+
+.buttonBox2 {
+    background-color: white;
+    border-color: white;
+    margin-left: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0cm;
+}
+
+.card_list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      @media screen and (max-width: 718px) {
+        gap: 3px;}  
+}
+
+.card {
+    border-radius: 30px;
+
+}
+
+.card2 {
+    margin-top: 25px;
+}
+
+.card3 {
+    border-radius: 30px;
+}
+
+.filter {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.filterBox {
+    border-radius: 30px;
+}
+
+.filterBox2 {
+    border-radius: 30px;
+    border-color: aliceblue;
+    text-align: center;
+}
+
+.filterBox3 {
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.filterButton {
+    background-color: lightgreen;
+    border-radius: 20px;
+    border : 0px;
+    cursor: pointer;
+}
+
+.filterButton2 {
+    background-color: lightgreen;
+    border-radius: 20px;
+    border : 0px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: auto;
+}
+
+.emphasisText {
+    font-weight: bolder;
+    font-size: 90%;
+}

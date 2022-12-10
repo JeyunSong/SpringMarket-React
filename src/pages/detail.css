@@ -1,0 +1,48 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-left: auto; 
+    margin-right: auto;
+    cursor: default;
+    text-align: center;
+    width: 70%;
+}
+
+.detailTitle {
+    margin-top: 3%;
+    font-weight: bolder;
+}
+
+.detailAddCart {
+    margin-top: 2%;
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.detailOrder {
+    margin-top: 1%;
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.detailOrderSelect {
+    margin-left: 5px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.detailReturn {
+    width: 5%;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-top: 2%;
+  }
