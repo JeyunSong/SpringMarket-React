@@ -44,8 +44,11 @@ const Main = () => {
         const response = await reqeustKeyword(keyword);
         setRes(response.data.check.data.content);
       } catch (error) {
-        alert("2글자 이상 작성해주세요");
+        // alert("2글자 이상 작성해주세요");
         console.log(error);
+        const msg = error.response.data.check.msg
+        console.log(msg);
+        alert(msg);
       }
     },
     [keyword]

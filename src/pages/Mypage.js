@@ -27,6 +27,8 @@ const Mypage = () => {
       orderNum: buyList[idx].orderNum + 1,
       productId: Number(buyList[idx].productId),
     };
+
+    
     const newList = [...buyList];
     newList.splice(idx, 1, Product);
     setBuyList(newList);
@@ -62,7 +64,8 @@ const Mypage = () => {
       window.location.reload();
       alert("주문이 성공적으로 완료되었습니다.");
     } catch (error) {
-      alert("주문이 실패하였습니다.");
+      const msg = error.response.data.check.msg
+      alert(msg);
     }
   };
 
@@ -72,7 +75,8 @@ const Mypage = () => {
       const response = await reqeustMypage();
       setRes(response.data.check.data);
     } catch (error) {
-      alert("카트에 상품이 없습니다.");
+      const msg = error.response.data.check.msg
+      alert(msg);
       navigate("/");
     }
   }, []);

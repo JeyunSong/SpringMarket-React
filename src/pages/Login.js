@@ -28,7 +28,8 @@ const Login = () => {
       alert("로그인 성공");
       navigate("/");
     } catch (error) {
-      alert("로그인 실패");
+      const msg = error.response.data.check.msg
+      alert(msg);
     }
   };
 

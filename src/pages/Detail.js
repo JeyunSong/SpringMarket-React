@@ -14,6 +14,7 @@ const Detail = () => {
   console.log(location);
   const [res, setRes] = useState({});
   const [orderRequestDto, setOrderRequestDto] = useState(INIT);
+  // const userError = new HttpError(errorCode, ERROR_MESSAGE_MAP[ACCESS_DENIED_EXCEPTION])
 
 
   const detail = async () => {
@@ -28,9 +29,9 @@ const Detail = () => {
       await reqeustAddCart(info?.productId);
       alert("장바구니 추가 완료");
     } catch (error) {
-      console.log(error)
-      alert("장바구니 추가 실패");
-    }
+      const msg = error.response.data.check.msg
+      alert(msg);
+    } 
   };
 
   const order = async (e) => {
@@ -40,8 +41,8 @@ const Detail = () => {
       await reqeustOrder(orderRequestDto);
       alert("주문 완료");
     } catch (error) {
-      alert("주문 수량을 정확하게 입력해주세요");
-      console.log(error);
+      const msg = error.response.data.check.msg
+      alert(msg);
     }
   };
 
