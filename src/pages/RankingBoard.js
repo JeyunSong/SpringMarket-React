@@ -26,11 +26,13 @@ const Main = () => {
     async (f) => {
       f?.preventDefault();
 
-      console.log(filter)
-
-      const response = await reqeustDashboard(filter);
-
-      setRes(response.data.check.data.content);
+      try {
+        const response = await reqeustDashboard(filter);
+        setRes(response.data.check.data.content);
+      } catch (error) {
+        const msg = error.response.data.check.msg
+        alert(msg);
+      }
     },
     [filter]
   );
@@ -44,7 +46,6 @@ const Main = () => {
         const response = await reqeustKeyword(keyword);
         setRes(response.data.check.data.content);
       } catch (error) {
-        // alert("2글자 이상 작성해주세요");
         console.log(error);
         const msg = error.response.data.check.msg
         console.log(msg);
@@ -61,7 +62,10 @@ const Main = () => {
   return (
     <div className="mainContainer">
       <div className="filterContainer">
-        <h1 className="logo">Spring Market</h1>
+        <h1 className="logo">
+      <Link style={{ textDecoration: "none", color: "black" }}
+      to={"/"}>Spring Market</Link>
+      </h1>
 
         <div className="topButtonAlign">
 
@@ -422,8 +426,7 @@ const Main = () => {
                 </Link>
               </div>
               <p className="emphasisText">{item.title}</p>
-              <p>price : {item.price}</p>
-              <p>productId : {item.productId}</p>
+              <p>{item.price}🪙</p>
             </li>
           );
         })}
