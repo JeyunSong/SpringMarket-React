@@ -366,10 +366,6 @@ const Main = () => {
               >
                 <option value={"조회순"}>조회순</option>
                 <option value={"날짜순"}>날짜순</option>
-                <option value={"10대"}>10대</option>
-                <option value={"20대"}>20대</option>
-                <option value={"30대"}>30대</option>
-                <option value={"40대 이상"}>40대 이상</option>
               </select>
             </div>
             <div>
