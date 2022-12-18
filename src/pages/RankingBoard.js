@@ -69,7 +69,8 @@ const Main = () => {
 
         <div className="topButtonAlign">
           
-          <h3> 🚷 현재 폐쇄되고 황량한 클라이언트 페이지만 남은 상태입니다. </h3>
+          <div> 🚷 현재 폐쇄되고 황량한 클라이언트 페이지만 남은 상태입니다. </div>
+          <div> + ReadMe 프로젝트 주요기능에서 영상 확인할 수 있습니다.</div>
 
           {localStorage.getItem("token") ? (
             <button className="topButton">
