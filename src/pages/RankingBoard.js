@@ -67,6 +67,8 @@ const Main = () => {
       to={"/"}>Spring Market</Link>
       </h1>
 
+<h3> 🚷 현재 폐쇄되고 황량한 클라이언트 페이지만 남은 상태입니다. </h3>
+
         <div className="topButtonAlign">
 
           {localStorage.getItem("token") ? (
